@@ -1,0 +1,16 @@
+---
+title: "Untitled"
+author: "Ben Williams"
+date: "9/26/2019"
+output:
+  bookdown::word_document2:
+    toc: no
+---
+
+This is figure \@ref(fig:abundance).
+
+```{r abundance, echo = F, fig.cap = paste("Estimates of scallop bed abundance based on statewide scallop dredge survey data. Error bars represent approximate 95 confidence intervals. Large scallops are those with shell height  100 mm")}
+
+knitr::include_graphics(here::here("figs/sonar_weir_compare.png"))
+```
+
